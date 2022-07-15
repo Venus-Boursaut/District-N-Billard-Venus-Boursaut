@@ -14,7 +14,7 @@ header {
 
 
         ul {
-            // max-width: 1400px;
+           
             display: flex;
             margin-left: auto;
             justify-content: end;
@@ -130,12 +130,11 @@ main {
         }
     }
 
-    .encadrement-des-articles{
+    .encadrement-des-articles {
         position: relative;
         margin: 0 auto;
         width: 1600px;
         height: 800px;
-        // top: 1798px;
         background-color: #FFFFFF;
         border: 3px rgb(255, 255, 255) solid;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -147,12 +146,11 @@ main {
 
         h2 {
             color: #6B5B54;
-            // text-align: center;
             letter-spacing: 0.06em;
             text-align: left;
             font-family: sans-serif;
             font-style: normal;
-            font-weight: 37.5rem; //////////////////////////////////
+            font-weight: 37.5rem; 
             font-size: 2.25rem;
             line-height: 2.25rem;
             margin-left: -5rem;
@@ -192,7 +190,6 @@ main {
         .art-avec-img-text img {
             position: absolute;
             top: 5rem;
-            // top: 50px; je baisse un peut pour pouvoir mieux modele
             left: 1.25rem;
         }
 
@@ -227,7 +224,6 @@ main {
 
         .ensavoir {
             position: absolute;
-            // top: 250px;
             font-family: sans-serif;
             color: #34A58A;
             text-decoration: none;
@@ -280,7 +276,6 @@ main {
 
         .ensavoir2 {
             position: absolute;
-            // top: 250px;
             font-family: sans-serif;
             color: #34A58A;
             text-decoration: none;
@@ -388,7 +383,6 @@ footer {
             img {
 
                 height: 20px;
-                // padding-bottom: 1rem; /* a voir il faut que je fasse des div je pense...*/
                 color: #FFFFFF;
             }
         }
@@ -401,8 +395,6 @@ footer {
     .dernier {
         text-align: center;
         border-top: 3px solid #FFFFFF;
-        // margin: 1rem 0;
-        // margin: 3rem 0;
         margin-top: 50px;
         padding-top: 2.6rem;
 
@@ -413,7 +405,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 1399px) {
+@media screen and (max-width: 1540px) {
 
     header {
         nav {
@@ -438,12 +430,130 @@ footer {
                 margin-right: 0;
             }
         }
+
+        .encadrement-des-articles {
+            max-width: 1280px;
+        }
+
     }
 }
 
 
+@media screen and (max-width: 912px) {
 
-@media screen and (max-width: 810px) {
+    main {
+
+        .encadrement-des-articles {
+            width: 800px;
+            height: 1150px;
+
+            h2 {
+                margin-top: 0.406rem;
+                margin-left: 0;
+            }
+            .art-avec-img-text{
+               h5{
+                padding-left: 1rem;
+               } 
+            }
+            .art-avec-img-textp {
+
+                padding-left: 1rem;
+            }
+
+            .art-avec-img-texth3 {
+                padding-left: 1rem;
+            }
+        }
+
+        .art-avec-img-text img {
+            max-width: 25%;
+            margin-left: 0px;
+            margin-top: 2rem;
+        }
+
+        .tart-avec-img-text article {
+            margin-left: 20px;
+            word-wrap: break-word;
+            width: 250px;
+            margin-top: 20px;
+        }
+
+        .art2-avec-img2-text img {
+            max-width: 25%;
+            left: 19px;
+            margin-top: 18rem;
+        }
+
+        .art2-avec-img2-texth3 {
+            margin-top: 2rem;
+        }
+
+        .art2-avec-img2-text article {
+            margin-top: 230px;
+            left: 390px;
+            word-wrap: break-word;
+            width: 250px;
+            top: 5rem;
+        }
+
+        .ensavoir {
+            top: 14.5rem;
+        }
+
+        .art2-avec-img2-text #plus {
+            margin-top: 0;
+            margin-left: 11.25rem;
+            top: 200px;
+        }
+
+        .art3-avec-img3-text img {
+            position: absolute;
+            max-width: 25%;
+            margin-left: 0;
+            top: 625px;
+        }
+
+        .art3-avec-img3-text article {
+            top: 28.438rem;
+            margin-left: 1.25rem;
+        }
+
+        .ensavoir2 {
+            top: 190px;
+            left: 10rem;
+        }
+
+        .art3-avec-img3-text #plus {
+            margin-left: 0.625rem;
+        }
+
+        .art3-avec-img3-text #plusss {
+            left: 200px;
+        }
+
+        .art4-avec-img4-text img {
+            position: absolute;
+            max-width: 25%;
+            margin-top: -6.5rem;
+            left: 1.3rem;
+        }
+
+        .art4-avec-img4-text article {
+            top: 920px; 
+            margin-right: 1.25rem;
+            word-wrap: break-word;
+            width: 15.625rem;
+        }
+    }
+    footer{
+        height: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 860px) {
     header {
         max-width: 100%;
 
@@ -452,12 +562,9 @@ footer {
 
             ul {
                 li {
+                    margin: auto;
                     a {
-                        margin-right: 1rem;
-
-                        a {
-                            padding: 1rem;
-                        }
+                        padding: 1rem 0rem;
                     }
                 }
             }
@@ -467,6 +574,10 @@ footer {
     main {
 
         max-width: 810px;
+
+        .encadrement-des-articles {
+            max-width: 810px;
+        }
 
         img {
             //effect sur l'image au passe de la souris 
@@ -507,7 +618,7 @@ footer {
                     padding-left: 1rem;
                 }
 
-                .block-presentation{
+                .block-presentation {
                     .mail {
                         display: block ruby;
                     }
@@ -515,114 +626,12 @@ footer {
             }
         }
 
-        .encadrement-des-articles{
-            // position: none;
-            // width: 810px;
-            // height: 1200px;
-            width: 800px;
-            height: 1150px;
 
-            h2 {
-                margin-top: 0.406rem;
-                margin-left: 0;
-            }
-        }
-
-        .art-avec-img-text img {
-            max-width: 25%;
-            // margin-left: -20px;
-            margin-left: 0px;
-            margin-top: 2rem;
-        }
-
-        .tart-avec-img-text article {
-            // margin-top: -20px;
-            margin-left: 20px;
-            word-wrap: break-word;
-            width: 250px;
-            margin-top: 20px;
-        }
-
-        .art2-avec-img2-text img {
-            max-width: 25%;
-            // margin-top: 250px;
-            // left: 0;
-            left: 19px;
-            margin-top: 18rem;
-        }
-
-        .art2-avec-img2-texth3 {
-            margin-top: 2rem;
-        }
-
-        .art2-avec-img2-text article {
-            margin-top: 230px;
-            left: 390px;
-            word-wrap: break-word;
-            width: 250px;
-            top: 5rem;
-        }
-
-        .ensavoir {
-            top: 14.5rem;
-            // margin-left: 8.125rem;
-        }
-
-        .art2-avec-img2-text#plus {
-            margin-top: 0;
-            margin-left: 11.25rem;
-            top: 200px;
-        }
-
-        .art3-avec-img3-text img {
-            position: absolute;
-            max-width: 25%;
-            // top: 40.625rem;
-            // margin-left: -1.25rem;
-            margin-left: 0;
-            top: 625px;
-        }
-
-        .art3-avec-img3-text article {
-            top: 28.438rem;
-            margin-left: 1.25rem;
-        }
-
-        .ensavoir2 {
-            // top: 14.375rem;
-            // left: 0;
-            top: 190px;
-            left: 10rem;
-        }
-
-        .art3-avec-img3-text #plus {
-            margin-left: 0.625rem;
-        }
-
-        .art3-avec-img3-text #plusss {
-            left: 200px;
-        }
-
-        .art4-avec-img4-text img {
-            position: absolute;
-            max-width: 25%;
-            // top: 61.875rem;
-            // left: 0;
-            margin-top: -6.5rem;
-            left: 1.3rem;
-        }
-
-        .art4-avec-img4-text article {
-            top: 920px; //top: 970px;
-            margin-right: 1.25rem;
-            word-wrap: break-word;
-            width: 15.625rem;
-        }
     }
 
     footer {
 
-        max-width: 810px;
+        max-width: 100%;
 
         .dernier {
             margin-top: 0px;
@@ -644,23 +653,19 @@ footer {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 620px) {
 
-    
+
 
     main {
 
-       
+        article .art1 {
 
-       
-
-        article .art1{
-            /////////// a retoucher cela ne pas//////////////
-                img {
-                    width: 360px;
-                }
+            img {
+                width: 360px;
+            }
         }
-        
+
 
         .art2 {
             .carte-map {
@@ -671,101 +676,26 @@ footer {
             }
 
         }
-        .encadrement-des-articles{
+
+        .encadrement-des-articles {
             width: 360px;
         }
-    //    .encadrement-des-articles{
-    //     max-width: 360px;
-    //         section{
-           
-    //        display:block; 
-    //     }
-    // }
-} 
+    }
+
     footer {
         max-width: 360px;
 
         .footer1art {
             a {
-                font-size: xx-small; //////CELA NE MARCHE PAS ////////
-            }
-        }
-    } 
-}
-
-@media screen and (max-width: 375px){
-
-    main{
-        
-        
-        .encadrement-des-articles{
-            max-width: 375px;
-        }
-    }
-    
-}
-
-@media screen and (max-width: 384px) {
-
-
-    main {
-
-        .art1 {
-            img {
-                max-width: 384px;
-            }
-
-        }
-
-
-        .carte-map {
-            .carte {
-                width: 384px;
-            }
-        }
-
-        .encadrement-des-articles{
-            section {
-                max-width: 384px;
+                font-size: xx-small; 
             }
         }
     }
-
-
-
 }
 
 
-
-
-////////////////////////////////////////////////////////////////////
-@media screen and (max-width: 390px) {
-
-    main {
-
-        .art1{
-            img{
-                width: 390px;
-            }
-        }
-
-        .carte-map{
-            .carte {
-                width: 390px;
-            }
-        }
-        .encadrement-des-articles {
-            max-width: 390px;
-        }
-
-    }
-
-}
-
-/////////////////////////////////////////////////////////////////////
-@media screen and (max-width: 414px){
+@media screen and (max-width: 414px) {
     header {
-        width: 100%;
 
         .menu {
             background-image: url(/src/img/navbar1.jpg);
@@ -777,17 +707,13 @@ footer {
 
 
         nav {
-            max-width: 414px;
-            //image:url(./img/navbar.png);  il faudra changer la proprieté car avec baground cela marche
+            width: 360px;
 
             ul {
                 display: grid;
                 margin: auto;
                 text-align: center;
 
-                // a{
-                // display: none; a appliquer seulemnt quadn l'image aura été inserée
-                //}
                 li {
 
                     a {
@@ -802,7 +728,7 @@ footer {
         .art1 {
             img {
                 height: 250px;
-                width: 410px;
+                width: 360px;
             }
         }
 
@@ -815,14 +741,18 @@ footer {
 
             .presentation {
                 display: contents;
+               
+    text-align: center;
+
+    right: 5rem;
+    padding-left: 5rem;
+    width: 25rem;
             }
-
-
 
             .carte {
                 margin-top: 700px;
                 margin-left: -250px;
-                width: 410px;
+                max-width: 360px;
                 height: 250px;
             }
 
@@ -838,8 +768,6 @@ footer {
             }
 
             .toutvoir a::after {
-                // margin-top: 50px;
-                // margin-right: 140px;
                 content: 'cliquez sur les images pour en savoir plus';
                 display: block;
                 font-size: 8px;
@@ -854,8 +782,6 @@ footer {
             .actualite {
                 display: none;
             }
-
-
 
             .art-avec-img-text img {
                 margin-left: 120px;
@@ -888,8 +814,6 @@ footer {
                 max-height: 10px;
             }
 
-
-
             .art4-avec-img4-text img {
                 margin-left: 120px;
                 top: 562px;
@@ -902,21 +826,25 @@ footer {
             .ensavoir2 {
                 display: none;
             }
-
-
         }
 
-        .encadrement-des-articles{
-            margin-top: 17.5rem;
+        .encadrement-des-articles {
+            margin-top: 280px;
             height: 560px;
             width: 360px;
         }
-
+        .carte-map{
+            .carte{
+              padding-right: 1.6rem; 
+            //   padding-top: 3rem;
+              width: 10px;
+            }
+           
+        }
     }
 
-
     footer {
-  
+
         max-width: 414px;
 
         .dernier {
@@ -961,22 +889,20 @@ footer {
             .footer2art a {
                 font-size: smaller;
             }
-
         }
     }
 }
-@media screen and (max-width: 412px) {
 
-    header {
-  
 
-        nav {
-            max-width: 412px;
-           }
-
-    footer {
-        max-width: 412px;
+@media screen and (max-width: 414px) { 
+    main {
+        .carte-map{
+            .carte{
+              padding-right: 1.6rem; 
+              padding-top: 3rem;
+              width: 10px;
+            }
+           
         }
-
-    } 
+    }
 }
